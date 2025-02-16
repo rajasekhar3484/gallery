@@ -14,9 +14,10 @@ const ImageSearch = ({searchText}) =>
 
   <div className="flex items-center border-b-2 border-teal-500 py-2">
 
-    <input onChange={e=>setText(e.target.value)} className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"/>
+  <input type="text" placeholder="Search Image Term" aria-label="Search image term" onChange={e => setText(e.target.value)} 
+  className="appearance-none bg-transparent border border-gray-300 rounded-lg w-full text-gray-700 py-2 px-4 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+/>
 
-    type="text" placeholder="Search Image Term" />
 
     <button className="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm Border-4 text-white
 
